@@ -19,7 +19,7 @@ interface IKalendEvento {
 const Calendario: React.FC = () => {
 
   const eventosKalend = new Map<string, IKalendEvento[]>();
-  const eventos = useRecoilValue(listaDeEventosState)
+  const eventos = useRecoilValue(listaDeEventosState);
   const atualizarEvento = useAtualizarEvento()
 
   eventos.forEach(evento => {
@@ -40,7 +40,6 @@ const Calendario: React.FC = () => {
     kalendEventoInalterado: CalendarEvent,
     kalendEventoAtualizado: CalendarEvent
   ) => {
-
     const evento = eventos.find(evento => evento.descricao === kalendEventoAtualizado.summary)
     if (evento) {
       const eventoAtualizado = {

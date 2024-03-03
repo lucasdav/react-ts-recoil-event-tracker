@@ -10,7 +10,6 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
     const eventoAlterado = {
       ...evento
     }
-
     eventoAlterado.completo = !eventoAlterado.completo
     atualizarEvento(eventoAlterado)
   }

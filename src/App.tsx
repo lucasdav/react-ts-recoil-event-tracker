@@ -9,21 +9,21 @@ import { RecoilRoot } from 'recoil'
 
 function App() {
 
-  // const [eventos, setEventos] = useState<IEvento[]>([
-  //   {
-  //     "descricao": "Estudar React",
-  //     "inicio": new Date("2022-01-15T09:00"),
-  //     "fim": new Date("2022-01-15T13:00"),
-  //     "completo": false,
-  //     "id": 1642342747
-  //   },
-  //   {
-  //     "descricao": "Estudar Recoil",
-  //     "inicio": new Date("2022-01-16T09:00"),
-  //     "fim": new Date("2022-01-16T11:00"),
-  //     "completo": false,
-  //     "id": 1642342959
-  //   }
+  //   const [eventos, setEventos] = useState<IEvento[]>([
+  //     {
+  //         "descricao": "Estudar React",
+  //         "inicio": new Date("2022-01-15T09:00"),
+  //         "fim": new Date("2022-01-15T13:00"),
+  //         "completo": false,
+  //         "id": 1642342747
+  //     },
+  //     {
+  //         "descricao": "Estudar Recoil",
+  //         "inicio": new Date("2022-01-16T09:00"),
+  //         "fim": new Date("2022-01-16T11:00"),
+  //         "completo": false,
+  //         "id": 1642342959
+  //     }
   // ])
 
 
@@ -32,19 +32,17 @@ function App() {
   const adicionarEvento = (evento: IEvento) => {
     evento.id = Math.round((new Date()).getTime() / 1000)
     // eventos.push(evento)
-    // console.log(eventos);
-
     // setEventos([...eventos])
   }
   // const alterarStatusEvento = (id: number) => {
-  //   // const evento = eventos.find(evento => evento.id === id)
-  //   // if (evento) {
-  //   //   evento.completo = !evento.completo
-  //   // }
-  //   // setEventos([...eventos])
+  // const evento = eventos.find(evento => evento.id === id)
+  // if (evento) {
+  //   evento.completo = !evento.completo
+  // }
+  // setEventos([...eventos])
   // }
   // const deletarEvento = (id: number) => {
-  //   // setEventos([...eventos.filter(evento => evento.id !== id)])
+  // setEventos([...eventos.filter(evento => evento.id !== id)])
   // }
 
   const aplicarFiltro = (data: Date | null) => {
